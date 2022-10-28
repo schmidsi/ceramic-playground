@@ -9,7 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@ceramicnetwork/http-client": "^2.7.0",
+    "@ceramicnetwork/stream-tile": "^2.6.0",
     "@self.id/framework": "^0.4.0",
+    "dids": "^3.4.0",
+    "key-did-provider-ed25519": "^2.0.1",
+    "key-did-resolver": "^2.3.0",
     "next": "13.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"

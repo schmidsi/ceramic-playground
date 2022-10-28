@@ -1,19 +1,29 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@ceramicnetwork/http-client': ^2.7.0
+  '@ceramicnetwork/stream-tile': ^2.6.0
   '@self.id/framework': ^0.4.0
   '@types/node': 18.11.7
   '@types/react': 18.0.24
   '@types/react-dom': 18.0.8
+  dids: ^3.4.0
   eslint: 8.26.0
   eslint-config-next: 13.0.0
+  key-did-provider-ed25519: ^2.0.1
+  key-did-resolver: ^2.3.0
   next: 13.0.0
   react: 18.2.0
   react-dom: 18.2.0
   typescript: 4.8.4
 
 dependencies:
+  '@ceramicnetwork/http-client': 2.7.0
+  '@ceramicnetwork/stream-tile': 2.6.0
   '@self.id/framework': 0.4.0_biqbaboplfbrettd7655fr4n2y
+  dids: 3.4.0
+  key-did-provider-ed25519: 2.0.1
+  key-did-resolver: 2.3.0
   next: 13.0.0_biqbaboplfbrettd7655fr4n2y
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0

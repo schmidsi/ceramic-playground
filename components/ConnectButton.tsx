@@ -1,7 +1,15 @@
 import { EthereumAuthProvider, useViewerConnection } from "@self.id/framework";
+import { useEffect, useState } from "react";
 
 function ConnectButton() {
+  const [isClient, setIsClient] = useState(false);
   const [connection, connect, disconnect] = useViewerConnection();
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
+  console.log(connection);
 
   return connection.status === "connected" ? (
     <button
@@ -11,7 +19,7 @@ function ConnectButton() {
     >
       Disconnect ({connection.selfID.id})
     </button>
-  ) : "ethereum" in window ? (
+  ) : isClient && "ethereum" in window ? (
     <button
       disabled={connection.status === "connecting"}
       onClick={async () => {
